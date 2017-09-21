@@ -1,0 +1,119 @@
+
+
+/*            source meta nokta olarak ayrılması gerekiyor*/
+
+atom-text-editor::shadow .host{
+  color: white;
+}
+
+/*              BASIC İSLEMLER YAPILDI BURADA         */
+atom-text-editor::shadow .comment{
+  color: #26ff10;
+}
+atom-text-editor::shadow .punctuation.definition{
+  font-weight: bolder;
+  // font-weight: 1100;
+  font-size: 100%;
+  margin: 2px ;
+  padding: 1px;
+  color: #ffffff;
+}
+atom-text-editor::shadow .source.python{
+  // color: #50c403;
+  color: white;
+}
+atom-text-editor::shadow .constant.numeric{
+
+  color: #ffffff;
+}
+/*              BASIC ISLEMLERDE BİTTİ            */
+
+
+
+
+/*                    STORAGE KÜTÜPHANESİ FALAN FİLAN           */
+atom-text-editor::shadow .storage.type.class{
+  color: #ff7a00;
+}
+atom-text-editor::shadow .storage.type.function{
+  color: #47a2ff;
+}
+atom-text-editor::shadow .entity.name.function{
+  color: #ff00ff;
+}
+atom-text-editor::shadow .entity.name.type.class{
+  color: #7aff00;
+}
+
+/*            STORAGE KÜTÜPHANESİ BİTİYOR           */
+
+
+
+/*                    OPERATORLER VS. BLA BLA       */
+atom-text-editor::shadow .keyword {
+  color: #e90aff;
+}
+atom-text-editor::shadow .keyword.operator{
+  color: #ffffff;
+}
+atom-text-editor::shadow .keyword.operator.logical{
+  color: #e90aff;
+}
+/*                    OPERATORLER VS. BLA BLA
+                              FINISH
+                                                                    */
+
+
+/*
+                ************************************
+                ************************************
+                ** Fonksiyonlar için renklendirme **
+                ************************************
+                ************************************
+*/
+
+
+atom-text-editor::shadow .meta.function-call.python{
+  .meta.function-call .python{
+    .meta .function-call.arguments .python{
+
+      color: #4853f9;
+    }
+    color: rgb(75,190,32,1);
+  }
+  color: #e8b537;
+}
+atom-text-editor::shadow .meta.function-call .python{
+  .meta .function-call .python{
+    .meta.function-call .python{
+      .meta.function-call.arguments .python{
+        color: pink;
+      }
+      color: #e8b537;
+    }
+    color: red;
+  }
+  color: #e8b537;
+}
+
+/*
+                ************************************
+                ************    FINISH    **********
+                ** Fonksiyonlar için renklendirme **
+                ***********    FINISH    ***********
+                ************************************
+*/
+
+atom-text-editor::shadow .element.style {
+  color: #c53c3c;
+}
+atom-text-editor::shadow .meta.function{
+  .parameters{
+    .variable{
+      color: #ece04e;
+    }
+  }
+}
+atom-text-editor::shadow .variable{
+  color: red;
+}
